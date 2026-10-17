@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>OpenScreen · 屏幕共享</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">◉</span><span>OpenScreen</span></div>
+      <div class="top-actions">
+        <span id="status" class="status" role="status" aria-live="polite">正在连接…</span>
+        <button id="fullscreen" type="button">全屏查看</button>
+      </div>
+    </header>
+    <main id="viewer" class="viewer">
+      <img id="screen" alt="共享电脑的实时屏幕" hidden>
+      <div id="placeholder" class="placeholder">
+        <div class="placeholder-icon">▣</div>
+        <h1>正在连接屏幕</h1>
+        <p>请稍候，画面会自动显示。</p>
+      </div>
+    </main>
+    <footer>画面仅供查看 · 使用浏览器全屏可获得更大视野</footer>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
